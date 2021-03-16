@@ -1,0 +1,26 @@
+name: analytics
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+# dev ops:
+  - pre-commit
+  - virtualenv=20.0.33  # https://github.com/pre-commit/pre-commit/issues/1645
+# Python dev ops:
+  - pytest
+  - pip=20.2.*  # SSLError on 20.3* (https://stackoverflow.com/questions/56628194/)
+  - jedi=0.17.*  # issue with tab autocompletion in ipython (https://stackoverflow.com/questions/33665039/)
+# Python data science:
+  - notebook
+  - jupyter_nbextensions_configurator
+  - jupyterlab
+  - matplotlib-base
+  - pandas
+  - scikit-learn
+  - seaborn
+  - lightgbm
+  - statsmodels
+# Python other:
+  - pyodbc
+  - sqlalchemy
+  - tqdm
