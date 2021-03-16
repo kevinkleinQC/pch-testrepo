@@ -6,7 +6,8 @@ d = {'asdf':1,
      'asdf':2}
 
 def function_with_docstring(argument):
-    """If arguments are present, arguments are present."""
+    """Integer argument
+    """
     if argument % 15 == 0:
         print("FIZZBUZZ")
     elif argument % 5 == 0:
