@@ -6,7 +6,7 @@ d = {'asdf':1,
      'asdf':2}
 
 def function_with_docstring(argument):
-    """Integer argument
+    """Returns fizzbuzz
     """
     if argument % 15 == 0:
         print("FIZZBUZZ")
