@@ -1,7 +1,7 @@
 # Note that when running this script, nothing seemingly out of the ordinary happens.
 # Yet, when feeding it to mypy...
 
-from typing import Optional, Union
+from typing import Optional
 
 
 class Person:
@@ -13,6 +13,7 @@ class Person:
 
 bob = Person("Bob", 172.5)
 
+from typing import Optional
 
 def get_age(person: str) -> Optional[int]:
     if person == "Bob":
@@ -23,6 +24,8 @@ def get_age(person: str) -> Optional[int]:
 
 
 print(get_age(bob))
+
+from typing import Union
 
 
 def pretty_print(string_or_int: Union[str, int]):
