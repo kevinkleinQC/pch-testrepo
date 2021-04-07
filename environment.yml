@@ -1,4 +1,4 @@
-name: analytics
+name: pch_test
 channels:
   - conda-forge
   - nodefaults
